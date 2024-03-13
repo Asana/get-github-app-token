@@ -5,3 +5,5 @@ installation in the Asana organization. The token is then used to authenticate w
 
 To learn how to use this Github Action, and for more on creating Github Apps that work in Asana's
 Github Org, see the corresponding [Slab doc](https://asana.slab.com/posts/github-apps-nk1td7o8).
+
+This action is for internal use only. The repo is public so that other public repos within the Asana org, like `node-asana`, can use it.
