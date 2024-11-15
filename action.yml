@@ -24,7 +24,7 @@ runs:
       id: get_token
       env:
         TEMP_DIR: ${{ runner.temp }}
-        LAMBDA_FUNCTION_URL: "https://jv2fqfrofl7veyzrfiizx4i7hq0joruw.lambda-url.us-east-1.on.aws/"
+        LAMBDA_FUNCTION_URL: "https://s5mfys5te5aks7kw7p54vmbhvu0vyqlw.lambda-url.us-east-1.on.aws/"
       run: |
         TOKEN_FILE="$TEMP_DIR/token.json"
         DATA='{"github_app_name":"${{ inputs.github-app-name }}"}'
