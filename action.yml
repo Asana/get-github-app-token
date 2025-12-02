@@ -34,7 +34,7 @@ runs:
         COMMERCIAL_LAMBDA_FUNCTION_URL: "https://s5mfys5te5aks7kw7p54vmbhvu0vyqlw.lambda-url.us-east-1.on.aws/"
         FEDRAMP_LAMBDA_FUNCTION_URL: "https://x4ltsnejil7dy6quaim6pn2iue0ewclt.lambda-url.us-east-1.on.aws/"
       run: |
-        if [[ ${{ inputs.partition }}== "fedramp" ]]; then
+        if [[ ${{ inputs.partition }} -eq "fedramp" ]]; then
           LAMBDA_FUNCTION_URL=$FEDRAMP_LAMBDA_FUNCTION_URL
         else
           LAMBDA_FUNCTION_URL=$COMMERCIAL_LAMBDA_FUNCTION_URL
